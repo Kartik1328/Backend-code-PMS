@@ -4,7 +4,7 @@ import com.pms.Model.AppraiseeSelfAssessementDraft;
 import java.util.Optional;
 
 public interface AppraiseeSelfAssessmentDraftRepository extends JpaRepository<AppraiseeSelfAssessementDraft,Long> {
-	
-	Optional<AppraiseeSelfAssessementDraft>findByempId(Long empId);
-
+	Optional<AppraiseeSelfAssessementDraft>findByEmpId(Long empId);
+	void deleteByEmpId(Long empId);
+	boolean existsByEmpId(Long empId);
 }
