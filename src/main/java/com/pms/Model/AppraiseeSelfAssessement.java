@@ -14,10 +14,10 @@ import jakarta.persistence.GenerationType;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "appraisee_self_assessement")
-public class AppraiseeSelfAssessement {
+public class AppraiseeSelfAssessement{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-	@SequenceGenerator(name="data",allocationSize=1)
+//	@SequenceGenerator(name="data",allocationSize=1)
 
     private Long sa_id;
 //	where ID is written that means it is the primary key of the table and that variable is very important

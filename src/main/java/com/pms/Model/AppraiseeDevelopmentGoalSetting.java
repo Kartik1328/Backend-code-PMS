@@ -12,7 +12,7 @@ import jakarta.persistence.GenerationType;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "appraisee_development_goal")
+@Table(name = "appraisee_development_goal_setting")
 public class AppraiseeDevelopmentGoalSetting {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,7 +24,7 @@ public class AppraiseeDevelopmentGoalSetting {
 //  bigint is used as Long in java
     
     
-    private Long empId;
+    private Long employeeId;
     private String selfAssessment;
     private String managerAssessment;
     private String training;

@@ -7,7 +7,7 @@ import jakarta.persistence.Table;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 
-//We have imported an library for the local date. So that the date can be used as a data type.
+//We have imported a library for the local date. So that the date can be used as a data type.
 @Entity
 @Getter
 @Setter
@@ -32,9 +32,5 @@ public class AppraiseeManagerAssessment {
     private String mgrRating;
     private String mgrName;
     private Long mgrId;
-
-    
-    
-    
 //    A FOREIGN KEY IS THERE IN THIS TABLE
 }

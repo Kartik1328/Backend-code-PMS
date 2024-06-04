@@ -28,6 +28,4 @@ public class AppraiseeKra {
 	private Long totalWeightage;
 	private String targetOperator;
 	private Long target;
-
-
 }

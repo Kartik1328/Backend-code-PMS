@@ -1,12 +1,10 @@
 package com.pms.Model;
 import java.time.LocalDate;
-
 import jakarta.persistence.*;
 import lombok.*;
-
 import jakarta.persistence.Table;
 
-//We have imported an library for the local date. So that the date can be used as a data type.
+//We have imported a library for the local date. So that the date can be used as a data type.
 @Entity
 @Getter
 @Setter
@@ -19,8 +17,7 @@ public class MasterTableDummy {
 //    wherever @Id is written then that is the primary key or auto genrating the rows in the table.
 //	where ID is written that means it is the primary key of the table and that variable is very important
 //  bigint is used as Long in java
-    
-    
+
     private Long empId;
 //    empID will be the primary key for the master table
     private String empName;
@@ -65,8 +62,6 @@ public class MasterTableDummy {
     
     private LocalDate assessmentSubmittedOn;
     private LocalDate assessmentReviewedOn;
-
-    
 
 }
 

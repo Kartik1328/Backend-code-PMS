@@ -2,6 +2,7 @@ package com.pms.Model;
 import jakarta.persistence.*;
 import lombok.*;
 import java.time.LocalDate;
+import java.util.Date;
 import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
 import jakarta.persistence.GeneratedValue;
@@ -13,19 +14,17 @@ import jakarta.persistence.GenerationType;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "employee_status")
+@Table(name = "employee_overall_status_tbl")
 public class EmployeeStatus {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	@SequenceGenerator(name="data",allocationSize=1)
 
     private Long Id;
-
 //	where ID is written that means it is the primary key of the table and that variable is very important
 //  here ID is for sa_id(self assessment)
 //  bigint is used as Long in java
-    
-    
+
    	private Long empId;
 	private String appraisalCycle;
 	private String subForApproval;
@@ -43,10 +42,9 @@ public class EmployeeStatus {
 	private String managerReview;
 	private  String currentStatus;
 	private String status;
-	private Long year;
-	private LocalDate reviewCycle;
+	private String year;
+	private String reviewCycle;
 	//these two local dates are for fetching the year and review cycle
-	
 }
 
 
