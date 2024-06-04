@@ -1,4 +1,4 @@
-package com.pms.ServiceImp;
+package com.pms.ServiceImpl;
 
 import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.stereotype.Service;
